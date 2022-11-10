@@ -32,4 +32,4 @@ Finally start the app
 php -S localhost:8000
 ```
 
-All api service specifications are contained in the json file.
+All api service specifications are contained in the ticketing.json file.

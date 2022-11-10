@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "797f64e2-dbbf-4ff6-824a-e73ea4b9a4c3",
+		"name": "TICKETING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23998532"
+	},
+	"item": [
+		{
+			"name": "Check Ticket Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_id\": 2,\r\n    \"ticket_code\": \"DTKRBQ8TW0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ticket/check",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ticket",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ticket Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_id\": 2,\r\n    \"ticket_code\": \"DTKRBQ8TW0\",\r\n    \"status\": \"claimed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ticket/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ticket",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
